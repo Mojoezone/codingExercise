@@ -43,6 +43,21 @@ html {
     height: auto;
   }
 
+.footerContainer{
+    background: url(../images/wave-pattern.png), -webkit-linear-gradient(-497deg, #9141A6 0%, #0E0BAB 100%);
+    background: url(../images/wave-pattern.png), linear-gradient(227deg, #9141A6 0%, #0E0BAB 100%);
+    background-repeat: repeat;
+    background-blend-mode: color-burn; 
+}
+
+.footerLogo{
+    width: 5rem;
+    height: auto;
+}
+
+.tableDataContainer{
+    overflow: scroll;
+}
 
   @media (min-width: 768px) {
     html {

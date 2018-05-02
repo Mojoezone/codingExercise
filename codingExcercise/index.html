@@ -38,8 +38,9 @@
 
     <!-- cards -->
     <div class="container-fluid pb-5">
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-3 box-shadow">
+        <div class="card-deck mb-3 text-center row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card mb-3 box-shadow">
                 <div class="card-header">
                     <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
                     <h4 class="priceTitle my-0 font-weight-normal">Basic</h4>
@@ -50,7 +51,10 @@
                     <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
                 </div>
             </div>
-            <div class="card mb-3 box-shadow">
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card mb-3 box-shadow">
                 <div class="card-header">
                     <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
                     <h4 class="priceTitle my-0 font-weight-normal">Standard</h4>
@@ -61,7 +65,9 @@
                     <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
                 </div>
             </div>
-            <div class="card mb-3 box-shadow">
+                </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card mb-3 box-shadow">
                 <div class="card-header">
                     <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
                     <h4 class="priceTitle my-0 font-weight-normal">Professional</h4>
@@ -72,7 +78,9 @@
                     <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
                 </div>
             </div>
-            <div class="card mb-3 box-shadow">
+                </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card mb-3 box-shadow">
                 <div class="card-header">
                     <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
                     <h4 class="priceTitle my-0 font-weight-normal">Enperprise</h4>
@@ -83,11 +91,13 @@
                     <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
                 </div>
             </div>
+                </div>
         </div>
     </div>
     <!-- Plan Table -->
     <div class="container mt-5">
-        <table class="table table-hover">
+        <div class="tableDataContainer">
+            <table class="table table-hover">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col"></th>
@@ -209,42 +219,43 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
 
     <!-- footer -->
-    <footer class="container-fluid pt-4 my-md-5 pt-md-5 border-top">
+    <footer class="footerContainer container-fluid pt-4 mt-5 pt-md-5 border-top">
         <div class="row">
             <div class="col-12 col-md">
-                <img class="mb-2" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                <img class="footerLogo mb-2" src="images/zingle-logo-white.svg" alt="Zingle">
                 <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
             </div>
             <div class="col-6 col-md">
-                <h5>Features</h5>
+                <h5 class="text-muted">Features</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
+                    <li><a class="text-white" href="#">Cool stuff</a></li>
+                    <li><a class="text-white" href="#">Random feature</a></li>
+                    <li><a class="text-white" href="#">Team feature</a></li>
+                    <li><a class="text-white" href="#">Stuff for developers</a></li>
+                    <li><a class="text-white" href="#">Another one</a></li>
+                    <li><a class="text-white" href="#">Last time</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">
-                <h5>Resources</h5>
+                <h5 class="text-muted">Resources</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
+                    <li><a class="text-white" href="#">Resource</a></li>
+                    <li><a class="text-white" href="#">Resource name</a></li>
+                    <li><a class="text-white" href="#">Another resource</a></li>
+                    <li><a class="text-white" href="#">Final resource</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">
-                <h5>About</h5>
+                <h5 class="text-muted">About</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
+                    <li><a class="text-white" href="#">Team</a></li>
+                    <li><a class="text-white" href="#">Locations</a></li>
+                    <li><a class="text-white" href="#">Privacy</a></li>
+                    <li><a class="text-white" href="#">Terms</a></li>
                 </ul>
             </div>
         </div>

@@ -55,9 +55,11 @@ html {
     height: auto;
 }
 
+/*
 .tableDataContainer{
-    overflow: scroll;
+    overflow: hidden;
 }
+*/
 
   @media (min-width: 768px) {
     html {

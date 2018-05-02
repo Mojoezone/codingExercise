@@ -9,216 +9,240 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
     <title>Coding Excercise</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/codingExcercise.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- nav not responsive -->
-    <div class="mainNav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom box-shadow text-white">
-        <h5 class="my-0 mr-md-auto font-weight-normal"><a href="index.html"><img class="navLogo" src="images/zingle-logo-white.svg" alt="Zingle" /></a></h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-white" href="#">Price</a> |
-            <a class="p-2 text-white" href="#">Login</a>
-        </nav>
-        <a class="btn btn-success text-white" href="#">Try Zingle Free</a>
-    </div>
+    <nav class="mainNav navbar navbar-expand-md sticky-top">
+        <a class="navbar-brand" href="index.html"><img class="navLogo" src="images/zingle-logo-white.svg" alt="Zingle" /></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<!--   replace mobile icon with menu  -->
+          <span class="text-white">Menu</span>
+        </button>
+        <div class="navExpansed collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto text-white">
+                <li class="nav-item active">
+                    <a class="navLiPipeDivider nav-link text-white h5" href="#">Price</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white h5" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-success text-white" href="#">Try Zingle Free</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
 
     <!-- message  -->
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">Simple, transparent pricing.</h1>
+    <div class="container-fluid mb-5">
+     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-3">Simple, transparent pricing.</h1>
         <p class="lead">Choose a plan that grows with you.</p>
     </div>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <p>How many messages will you be sending &amp; receiving (combined) each month?</p>
         <p class="small">Choose a plan that grows with you.</p>
     </div>
+        <div class="progressBarContainer container pb-5">
+            
+            <div class="progress-bar">
+                <span class="rounded-circle bg-primary">  
+            </span>
+            </div>
+        </div>
+    </div>
+   
 
     <!-- cards -->
     <div class="container-fluid pb-5">
         <div class="card-deck mb-3 text-center row">
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card mb-3 box-shadow">
-                <div class="card-header">
-                    <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
-                    <h4 class="priceTitle my-0 font-weight-normal">Basic</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">39</span><span class="pricingCardTitleSmall">monthly</span></h1>
-                    <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
-                    <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    <div class="card-header">
+                        <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
+                        <h4 class="priceTitle my-0 font-weight-normal">Basic</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">39</span><span class="pricingCardTitleSmall">monthly</span></h1>
+                        <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
+                        <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    </div>
                 </div>
             </div>
-            </div>
-            
+
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card mb-3 box-shadow">
-                <div class="card-header">
-                    <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
-                    <h4 class="priceTitle my-0 font-weight-normal">Standard</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">79</span><span class="pricingCardTitleSmall">monthly</span></h1>
-                    <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
-                    <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    <div class="card-header">
+                        <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
+                        <h4 class="priceTitle my-0 font-weight-normal">Standard</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">79</span><span class="pricingCardTitleSmall">monthly</span></h1>
+                        <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
+                        <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    </div>
                 </div>
             </div>
-                </div>
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card mb-3 box-shadow">
-                <div class="card-header">
-                    <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
-                    <h4 class="priceTitle my-0 font-weight-normal">Professional</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">149</span><span class="pricingCardTitleSmall">monthly</span></h1>
-                    <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
-                    <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    <div class="card-header">
+                        <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
+                        <h4 class="priceTitle my-0 font-weight-normal">Professional</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">149</span><span class="pricingCardTitleSmall">monthly</span></h1>
+                        <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
+                        <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    </div>
                 </div>
             </div>
-                </div>
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card mb-3 box-shadow">
-                <div class="card-header">
-                    <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
-                    <h4 class="priceTitle my-0 font-weight-normal">Enperprise</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">399</span><span class="pricingCardTitleSmall">monthly</span></h1>
-                    <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
-                    <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    <div class="card-header">
+                        <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
+                        <h4 class="priceTitle my-0 font-weight-normal">Enperprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span class="pricingCardTitleSmall">&#36;</span> <span class="priceCardTitleNumber">399</span><span class="pricingCardTitleSmall">monthly</span></h1>
+                        <p class="priceCardBodyP list-unstyled mt-3 mb-4"> Best for small businesses just getting started.</p>
+                        <button type="button" class="priceCardBodyBtn btn btn-lg btn-block btn-success text-white">GET STARTED NOW</button>
+                    </div>
                 </div>
             </div>
-                </div>
         </div>
     </div>
     <!-- Plan Table -->
     <div class="container-fluid mt-5 pb-5">
         <div class="tableDataContainer">
             <table class="table table-hover table-responsive-sm">
-            <thead class="bg-success text-white">
-                <tr>
-                    <th scope="col"></th>
-                    <th class="text-center" scope="col">Basic</th>
-                    <th class="text-center" scope="col">Standard</th>
-                    <th class="text-center" scope="col">Professional</th>
-                    <th class="text-center" scope="col">Enterprise</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th colspan="5">LIMITS</th>
-                </tr>
-                <tr>
-                    <td scope="row">Team Members <span class="small">add’l. $15/each</span></td>
-                    <td class="text-center">1 included</td>
-                    <td class="text-center">1 included</td>
-                    <td class="text-center">3 included</td>
-                    <td class="text-center text-success">10 included</td>
-                </tr>
-                <tr>
-                    <th colspan="5">Features</th>
-                </tr>
-                <tr>
-                    <td scope="row">Contact</td>
-                    <td class="text-center">Unlimited</td>
-                    <td class="text-center">Unlimited</td>
-                    <td class="text-center">Unlimited</td>
-                    <td class="text-center text-success">Unlimited</td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="2">MMS (picture messaging)</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row">Group Messaging</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row">Analytics &amp; Reporting</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row">iOS &amp; Android Apps</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="2">Templates (saved replies)</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="2">Tags</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="2">Automations (Zings)</td>
-                    <td class="text-center">2</td>
-                    <td class="text-center">10</td>
-                    <td class="text-center text-success">Unlimited</td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="3">Smart Segments</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="3">Conversation Assignment</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                  <tr>
-                    <td scope="row" colspan="3">Multi-channel Messaging</td>
-                    <td class="text-center">Facebook</td>
-                    <td class="text-center text-success">Facebook, LINE, WeChat</td>
-                </tr>
-                 <tr>
-                    <td scope="row" colspan="4">Premium Automations (Zings)</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="4">Teams</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="4">Web Chat &amp; Chat SDK</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="4">API Access</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="4">Hospitality Integrations</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                 <tr>
-                    <td scope="row" colspan="3">Dedicated account manager</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-                <tr>
-                    <td scope="row" colspan="4">Custom setup &amp; training</td>
-                    <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
-                </tr>
-            </tbody>
-        </table>
+                <thead class="bg-success text-white">
+                    <tr>
+                        <th scope="col"></th>
+                        <th class="text-center" scope="col">Basic</th>
+                        <th class="text-center" scope="col">Standard</th>
+                        <th class="text-center" scope="col">Professional</th>
+                        <th class="text-center" scope="col">Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="5">LIMITS</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">Team Members <span class="small">add’l. $15/each</span></td>
+                        <td class="text-center">1 included</td>
+                        <td class="text-center">1 included</td>
+                        <td class="text-center">3 included</td>
+                        <td class="text-center text-success">10 included</td>
+                    </tr>
+                    <tr>
+                        <th colspan="5">Features</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">Contact</td>
+                        <td class="text-center">Unlimited</td>
+                        <td class="text-center">Unlimited</td>
+                        <td class="text-center">Unlimited</td>
+                        <td class="text-center text-success">Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">MMS (picture messaging)</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Group Messaging</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Analytics &amp; Reporting</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">iOS &amp; Android Apps</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">Templates (saved replies)</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">Tags</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">Automations (Zings)</td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">10</td>
+                        <td class="text-center text-success">Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="3">Smart Segments</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="3">Conversation Assignment</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="3">Multi-channel Messaging</td>
+                        <td class="text-center">Facebook</td>
+                        <td class="text-center text-success">Facebook, LINE, WeChat</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">Premium Automations (Zings)</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">Teams</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">Web Chat &amp; Chat SDK</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">API Access</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">Hospitality Integrations</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="3">Dedicated account manager</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">Custom setup &amp; training</td>
+                        <td class="text-center" class="checkTr"><img class="checkIcon" src="images/check-circle.svg" alt="Check Icons" /></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -253,15 +277,15 @@
                 </ul>
             </div>
             <div class="col-6 col-md">
-            <h5 class="text-muted">Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-white" href="#">Blog</a></li>
-              <li><a class="text-white" href="#">Meida</a></li>
-              <li><a class="text-white" href="#">Support</a></li>
-              <li><a class="text-white" href="#">Privacy</a></li>
-              <li><a class="text-white" href="#">Terms of Use</a></li>
-            </ul>
-          </div>
+                <h5 class="text-muted">Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-white" href="#">Blog</a></li>
+                    <li><a class="text-white" href="#">Meida</a></li>
+                    <li><a class="text-white" href="#">Support</a></li>
+                    <li><a class="text-white" href="#">Privacy</a></li>
+                    <li><a class="text-white" href="#">Terms of Use</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 

@@ -37,21 +37,37 @@ body{
 }
 
 /*message*/
-.progressBarContainer{
-    position: relative;
+.progressBarContainer .slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #05AFF2;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
-.rounded-circle{
-    position: absolute;
-    top: -1rem;
-    left: 3rem;
-    width: 2.5rem;
-    height: 2.5rem;
+.slider:hover {
+    opacity: 1;
 }
-.progress-bar{
-    height: .5rem;
-    background-color: #2DBBF2;
-    transition: width 0.6s ease-in-out;
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #05AFF2;
+    cursor: pointer;
 }
+.slider::-moz-range-thumb {
+    width: 3rempx;
+    height: 3rem;
+    border-radius: 50%;
+    background: #05AFF2;
+    cursor: pointer;
+}
+
 /*cards*/
 
 .card-deck .card {

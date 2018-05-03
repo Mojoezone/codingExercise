@@ -69,7 +69,9 @@ body{
 }
 
 /*cards*/
-
+.cardActive {
+    border: 1px solid #38DA7E;
+}
 .card-deck .card {
     min-width: 220px;
 }

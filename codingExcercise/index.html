@@ -470,11 +470,11 @@
             currentMyRangeValue = parseInt(myRange.value);
             console.log("new " + currentMyRangeValue)
             console.log("range" + myRangeValue)
-            if((totleValue - currentMyRangeValue) < myRangeValue ){
+            if((totleValue - currentMyRangeValue) <= myRangeValue ){
                 newPrice += 1;
                 //updateValue = newPrice;
                 console.log("her" + newPrice)
-            }else if((totleValue - currentMyRangeValue) > myRangeValue){
+            }else if((totleValue - currentMyRangeValue) >= myRangeValue){
                 newPrice -= 1;
                 //updateValue = newPrice;
                 

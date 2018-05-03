@@ -58,11 +58,11 @@
     <!-- cards -->
     <div class="sliderCardDeckContainer container-fluid pb-5">
         <div class="progressBarContainer container pb-5 mb-5">
-            <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange" oninput="upDatePrice()">
         </div>
         <div class="card-deck mb-3 text-center row">
             <div class="cards col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                <div class="card cardActive mb-3 box-shadow">
+                <div class="card mb-3 box-shadow">
                     <div class="card-header">
                         <span><img class="priceIcon" src="images/thumbs-up.svg" alt="thumbs-up" /></span>
                         <h4 class="priceTitle my-0 font-weight-normal">Basic</h4>
@@ -453,14 +453,35 @@
     </footer>
 
 
-
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>
-
-
+        let myRange = document.getElementById('myRange');
+        let priceCardTitleNumber = document.querySelectorAll('.priceCardTitleNumber');
+        let myRangeValue = parseInt(myRange.value);
+        let currentMyRangeValue = 0;
+        let totleValue = 100;
+        let updateValue;
+        
+       function upDatePrice(){
+            priceCardTitleNumber.forEach(function(price){
+            console.log(parseInt(price.innerHTML));
+            let newPrice = parseInt(price.innerHTML);
+            console.log(typeof(newPrice))
+            currentMyRangeValue = parseInt(myRange.value);
+            console.log("new " + currentMyRangeValue)
+            console.log("range" + myRangeValue)
+            if((totleValue - currentMyRangeValue) < myRangeValue ){
+                newPrice += 1;
+                //updateValue = newPrice;
+                console.log("her" + newPrice)
+            }else if((totleValue - currentMyRangeValue) > myRangeValue){
+                newPrice -= 1;
+                //updateValue = newPrice;
+                
+            }
+            price.innerHTML = newPrice;
+        })
+        }
     </script>
     <script src="js/bootstrap.min.js"></script>
 

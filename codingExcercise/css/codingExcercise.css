@@ -69,9 +69,6 @@ body{
 }
 
 /*cards*/
-.cardActive {
-    border: 1px solid #38DA7E;
-}
 .card-deck .card {
     min-width: 220px;
 }
@@ -106,7 +103,7 @@ body{
 
 .priceCardTitleNumber {
     vertical-align: top;
-    line-height: 3rem;
+    line-height: 3.8rem;
 }
 
 .pricingCardTitleSmall {
